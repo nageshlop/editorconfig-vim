@@ -17,7 +17,7 @@ matrix:
       env: TEST_WHICH=plugin
       language: ruby
       rvm:
-        - 2.2.4
+        - 2.6
       gemfile: tests/plugin/Gemfile
     - name: "core"
       arch: ppc64le
