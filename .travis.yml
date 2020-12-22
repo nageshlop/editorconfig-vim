@@ -11,6 +11,17 @@ matrix:
       gemfile: tests/plugin/Gemfile
     - name: "core"
       env: TEST_WHICH=core
+# ppc64le support code
+    - name: "plugin"
+      arch: ppc64le
+      env: TEST_WHICH=plugin
+      language: ruby
+      rvm:
+        - 2.2.4
+      gemfile: tests/plugin/Gemfile
+    - name: "core"
+      arch: ppc64le
+      env: TEST_WHICH=core
 
 addons:
   apt:
